@@ -54,7 +54,9 @@
 .clearfix::after {
   clear: both;
 }
-
+/**
+  Aqui troca o fundo*/
+  
 body {
   font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #515158;
@@ -97,6 +99,7 @@ button:focus {
   fill: currentColor;
 }
 
+/*troca a cor do fundo*/
 .container {
   position: relative;
   width: 100vw;
@@ -215,6 +218,7 @@ button:focus {
   left: 50%;
 }
 
+/*estacionamendo e tals*/
 .surroundings {
   width: 192vmin;
   /* double of mall map */
@@ -248,11 +252,13 @@ button:focus {
 }
 
 .surroundings,
+/*é aqui q deixa de lado*/
 .levels {
   -webkit-transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
   transform: rotateX(70deg) rotateZ(-45deg) translateZ(-15vmin);
 }
 
+/*Aqui muda o tamanho e tals*/
 .level {
   position: relative;
   width: 100%;
@@ -310,6 +316,7 @@ button:focus {
   content: 'L4';
 }
 
+/*Fica empilhado*/
 .level:not(:first-child) {
   position: absolute;
   top: 0;
