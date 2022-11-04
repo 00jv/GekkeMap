@@ -3,6 +3,7 @@ import Draggable from 'react-draggable';
 import './assets/css/normalize.css';
 import './App.css';
 import surroundings from './assets/images/surroundings.svg';
+import Mapas from './Components/mapas';
 
 class App extends Component {
   constructor(props){
@@ -130,7 +131,7 @@ class App extends Component {
             <symbol id="icon-tea" viewBox="0 0 32 32">
               <title>tea</title>
               <path className="path1"
-                    d="M14.503 32h8.728c5.305 0 5.318 0.010 5.318-5.295v-17.695c0-2.091-0.013-2.075-2.101-2.075h-15.158c-2.108 0-2.095-0.013-2.095 2.075v1.351c-0.498-0.193-1.009-0.305-1.564-0.305-2.311 0-4.18 1.872-4.18 4.183v7.841c0 2.311 1.869 4.18 4.18 4.18 0.554 0 1.066-0.11 1.564-0.302v0.747c0 5.305 0.003 5.295 5.308 5.295zM23.835 10.58c0-0.574 0.471-1.046 1.046-1.046s1.046 0.471 1.046 1.046v15.158c0 0.574-0.471 1.046-1.046 1.046s-1.046-0.471-1.046-1.046v-15.158zM7.634 23.647c-0.87 0-1.56-0.701-1.56-1.567v-7.841c0-0.866 0.694-1.567 1.56-1.567s1.56 0.701 1.56 1.567v7.841c0 0.866-0.691 1.567-1.56 1.567z"></path>
+                    d="M14.503 32h8.728c5.305 0 5.318 0.010 5.                  318-5.295v-17.695c0-2.091-0.013-2.075-2.101-2.075h-15.158c-2.108 0-2.095-0.013-2.095 2.075v1.351c-0.498-0.193-1.009-0.305-1.564-0.305-2.311 0-4.18 1.872-4.18 4.183v7.841c0 2.311 1.869 4.18 4.18 4.18 0.554 0 1.066-0.11 1.564-0.302v0.747c0 5.305 0.003 5.295 5.308 5.295zM23.835 10.58c0-0.574 0.471-1.046 1.046-1.046s1.046 0.471 1.046 1.046v15.158c0 0.574-0.471 1.046-1.046 1.046s-1.046-0.471-1.046-1.046v-15.158zM7.634 23.647c-0.87 0-1.56-0.701-1.56-1.567v-7.841c0-0.866 0.694-1.567 1.56-1.567s1.56 0.701 1.56 1.567v7.841c0 0.866-0.691 1.567-1.56 1.567z"></path>
               <path className="path2"
                     d="M13.105 2.985c-0.040-0.030-0.080-0.060-0.12-0.086s-0.080-0.056-0.123-0.083c-0.040-0.027-0.083-0.053-0.123-0.080-0.043-0.027-0.086-0.050-0.126-0.076-0.173-0.103-0.349-0.196-0.534-0.285-0.369-0.173-0.754-0.315-1.152-0.428-0.199-0.056-0.398-0.103-0.601-0.146l-0.126-0.027-0.139-0.030-0.139-0.027-0.063-0.013-0.060-0.013c-0.080-0.017-0.163-0.033-0.246-0.050s-0.169-0.037-0.256-0.053c-0.043-0.010-0.086-0.017-0.126-0.027-0.043-0.010-0.083-0.020-0.126-0.027-0.043-0.010-0.083-0.017-0.126-0.027s-0.083-0.017-0.126-0.027c-0.083-0.020-0.166-0.037-0.249-0.056s-0.163-0.040-0.246-0.056c-0.040-0.010-0.083-0.017-0.123-0.030-0.040-0.010-0.080-0.020-0.12-0.030s-0.080-0.020-0.12-0.027c-0.040-0.010-0.080-0.020-0.12-0.030-0.631-0.153-1.218-0.319-1.73-0.491-0.256-0.086-0.491-0.173-0.704-0.256s-0.398-0.166-0.554-0.242c-0.156-0.073-0.279-0.139-0.365-0.186s-0.133-0.076-0.133-0.076-0.003 0.056 0.013 0.156c0.013 0.1 0.043 0.249 0.106 0.428 0.060 0.179 0.153 0.395 0.282 0.627s0.299 0.478 0.508 0.727c0.209 0.249 0.458 0.501 0.744 0.737s0.601 0.461 0.946 0.664c0.342 0.203 0.714 0.388 1.096 0.541 0.096 0.040 0.193 0.076 0.289 0.113s0.196 0.073 0.295 0.103c0.1 0.033 0.199 0.063 0.299 0.093 0.103 0.030 0.209 0.056 0.312 0.083l0.12 0.030 0.037 0.010 0.139 0.033 0.139 0.030 0.070 0.017 0.083 0.017c0.169 0.033 0.342 0.066 0.508 0.1 0.332 0.063 0.654 0.123 0.969 0.183 0.153 0.030 0.305 0.060 0.455 0.090 0.073 0.017 0.146 0.030 0.216 0.043 0.070 0.017 0.143 0.030 0.209 0.046 0.276 0.060 0.531 0.123 0.764 0.193s0.442 0.146 0.627 0.232c0.183 0.086 0.342 0.183 0.471 0.282 0.033 0.023 0.060 0.050 0.090 0.073 0.027 0.023 0.053 0.050 0.076 0.073s0.046 0.046 0.063 0.070c0.020 0.023 0.037 0.043 0.053 0.060 0.030 0.040 0.053 0.070 0.066 0.093s0.020 0.037 0.020 0.037 0.010-0.010 0.023-0.037c0.013-0.023 0.033-0.060 0.053-0.113 0.010-0.027 0.020-0.053 0.030-0.086s0.017-0.070 0.027-0.106c0.017-0.080 0.027-0.173 0.030-0.279 0.003-0.212-0.040-0.471-0.146-0.75s-0.276-0.571-0.498-0.847c-0.222-0.285-0.498-0.548-0.81-0.78z"></path>
               <path className="path3"
@@ -325,7 +326,7 @@ class App extends Component {
                       <div ref={this.levelOne} onContextMenu={this.handleLevelContextMenu.bind(this)} className={"level level--1 " + ((this.state.selectedLevel === 1) ? "level--current" : "")} aria-label="Level 1" onClick={this.handleLevelClick.bind(this, 1)}>
                         <svg className="map map--1" viewBox="0 0 1200 800" width="100%" height="100%"
                              preserveAspectRatio="xMidYMid meet">
-                          <title>Map Level 1</title>
+                          <title>Primeiro Andar</title>
                           <polygon
                               points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41"
                               className="map__ground"/>
@@ -499,7 +500,7 @@ class App extends Component {
                         <div className={"level level--2 " + ((this.state.selectedLevel === 2) ? "level--current" : "")} aria-label="Level 2" onClick={this.handleLevelClick.bind(this, 2)}>
                             <svg className="map map--2" viewBox="0 0 1200 800" width="100%" height="100%"
                                  preserveAspectRatio="xMidYMid meet">
-                                <title>Map Level 2</title>
+                                <title>Segundo Andar</title>
                                 <polygon
                                     points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41"
                                     className="map__ground"/>
@@ -612,7 +613,7 @@ class App extends Component {
                         <div className={"level level--3 " + ((this.state.selectedLevel === 3) ? "level--current" : "")} aria-label="Level 3" onClick={this.handleLevelClick.bind(this, 3)}>
                             <svg className="map map--3" viewBox="0 0 1200 800" width="100%" height="100%"
                                  preserveAspectRatio="xMidYMid meet">
-                                <title>Map Level 3</title>
+                                <title>Terceiro Andar</title>
                                 <polygon
                                     points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41"
                                     className="map__ground"/>
@@ -706,7 +707,7 @@ class App extends Component {
                         <div className={"level level--4 " + ((this.state.selectedLevel === 4) ? "level--current" : "")} aria-label="Level 4" onClick={this.handleLevelClick.bind(this, 4)}>
                             <svg className="map map--4" viewBox="0 0 1200 800" width="100%" height="100%"
                                  preserveAspectRatio="xMidYMid meet">
-                                <title>Map Level 2</title>
+                                <title>Quarto Andar</title>
                                 <polygon
                                     points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41"
                                     className="map__ground"/>
@@ -803,6 +804,110 @@ class App extends Component {
                                 </a>
                             </div>
                         </div>
+
+                        <div className={"level level-- 5" + ((this.state.selectedLevel === 5) ? "level--current" : "")} aria-label="Level 5" onClick={this.handleLevelClick.bind(this, 5)}>
+                        <Mapas level={5} nomeAndar={"Quinto Andar"}/>
+                        </div>
+                        {/* <div className={"level level--5 " + ((this.state.selectedLevel === 5) ? "level--current" : "")} aria-label="Level 5" onClick={this.handleLevelClick.bind(this, 5)}>
+                            <svg className="map map--5" viewBox="0 0 1200 800" width="100%" height="100%"
+                                 preserveAspectRatio="xMidYMid meet">
+                                <title>Quinto Andar</title>
+                                <polygon
+                                    points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41"
+                                    className="map__ground"/>
+                                <path
+                                    d="M1187.28,12.59V350.52H855.37v72.64h180.58V787.41H627.81l-73.41-203H414.93l-58.73,203H12.72V366.5H49.37V12.59h388V68.87H548.08V12.59h639.19M1200,0H535.36V56.28H450.09V0H36.65V353.91H0V800H365.8l2.64-9.13L424.52,597H545.44l70.39,194.65,3,8.35h429.82V410.57H868.09V363.11H1200V0h0Z"
+                                    className="map__outline"/>
+                                <path
+                                    d="M674.5,647c2,16.3,29.2,31.3,51.4,28.9c51.9-5.8,80.3-107.4,64.7-119c-6.4-4.7-27.9,11.2-70.8,43.1C676.6,632,673.7,640.5,674.5,647z"
+                                    className="map__lake"/>
+                                <ellipse cx="738.82" cy="595.48" rx="13.95" ry="13.8" className="map__tree"/>
+                                <ellipse cx="768.46" cy="605.4" rx="13.95" ry="13.8" className="map__tree"/>
+                                <ellipse cx="744.64" cy="624.92" rx="13.95" ry="13.8" className="map__tree"/>
+                                <rect x="666.9" y="565.6" width="26.3" height="26" className="map__space"/>
+                                <path data-space="4.05"
+                                      d="M454.8,266.2h63c13.4-0.1,24.4,10.8,24.5,24.2c0,0,0,0,0,0l0,0v199.4c-0.1,13.4-11.1,24.3-24.5,24.2h-63c-13.4,0.1-24.4-10.8-24.5-24.2c0,0,0,0,0,0l0,0V290.4C430.3,277,441.3,266.1,454.8,266.2C454.7,266.2,454.7,266.2,454.8,266.2L454.8,266.2L454.8,266.2z"
+                                      className="map__space"/>
+                                <rect x="282.3" y="478.1" width="26.3" height="26" className="map__space"/>
+                                <rect x="12.7" y="366.5" width="202.4" height="175.1" className="map__space"/>
+                                <rect x="12.7" y="550.6" width="50.9" height="236.8" className="map__space"/>
+                                <circle data-space="4.07" cx="143.1" cy="708.1" r="49.5" className="map__space"/>
+                                <circle data-space="4.01" cx="288.6" cy="658.6" r="66" className="map__space"/>
+                                <polygon data-space="4.02"
+                                         points="49.4,354.1 362.1,354.1 362.1,230.9 600,230.9 600,297.1 855.4,297.1 855.4,12.6 548.1,12.6 548.1,68.9 437.4,68.9 437.4,12.6 49.4,12.6 "
+                                         className="map__space"/>
+                                <rect x="1065.6" y="12.6" width="121.7" height="110.5" className="map__space"/>
+                                <rect data-space="4.03" x="1065.6" y="132.1" width="121.7" height="218.4"
+                                      className="map__space"/>
+                                <polygon points="901.3,92.6 886.9,67.8 901.3,43 929.9,43 944.2,67.8 929.9,92.6 "
+                                         className="map__space"/>
+                                <polygon points="953.3,129.1 938.6,103.6 953.3,78.1 982.8,78.1 997.5,103.6 982.8,129.1 "
+                                         className="map__space"/>
+                                <rect x="951.6" y="213.1" width="73.5" height="73.5" className="map__space"/>
+                                <rect data-space="4.06" x="639.6" y="399.5" width="151.5" height="121.1"
+                                      className="map__space"/>
+                                <rect data-space="4.04" x="855.4" y="423.2" width="180.6" height="364.2"
+                                      className="map__space"/>
+                                <polygon points="613.2,747 846.6,658.6 846.6,787.4 627.8,787.4" className="map__space"/>
+                            </svg>
+                            <div className="level__pins">
+                                <a className="pin pin--4-1" data-category="1" data-space="4.01" href="#"
+                                   aria-label="Pin for Cold Soup Kitchen">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--tomato"><use
+                                            xlinkHref="#icon-tomato"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-2" data-category="2" data-space="4.02" href="#"
+                                   aria-label="Pin for Docu Dome">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--cinema"><use
+                                            xlinkHref="#icon-cinema"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-3" data-category="3" data-space="4.03" href="#"
+                                   aria-label="Pin for Little Artist">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--paint-brush"><use
+                                            xlinkHref="#icon-paint-brush"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-4" data-category="4" data-space="4.04" href="#"
+                                   aria-label="Pin for Sacred Symmetry">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--modx"><use xlinkHref="#icon-modx"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-5" data-category="4" data-space="4.05" href="#"
+                                   aria-label="Pin for Hot Tub Festival">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--droplet"><use
+                                            xlinkHref="#icon-droplet"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-6" data-category="2" data-space="4.06" href="#"
+                                   aria-label="Pin for Love 2 Cook">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--cupcake"><use
+                                            xlinkHref="#icon-cupcake"></use></svg>
+									</span>
+                                </a>
+                                <a className="pin pin--4-7" data-category="2" data-space="4.07" href="#"
+                                   aria-label="Pin for Permaculture Hub">
+									<span className="pin__icon">
+										<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
+										<svg className="icon icon--logo icon--leafcircle"><use
+                                            xlinkHref="#icon-leafcircle"></use></svg>
+									</span>
+                                </a>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
 

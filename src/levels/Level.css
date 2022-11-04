@@ -55,6 +55,10 @@
     content: 'L4';
 }
 
+.level--5::after {
+    content: 'L5';
+}
+
 .level:not(:first-child) {
     position: absolute;
     top: 0;
